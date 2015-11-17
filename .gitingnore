@@ -1,0 +1,5 @@
+bin/
+obj/
+**/bin/
+**/obj/
+EmpeekTask.v12.suo

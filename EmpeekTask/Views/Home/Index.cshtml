@@ -1,0 +1,73 @@
+﻿@using EmpeekTask.Entity
+@{
+    ViewBag.Title = "Index";
+    Layout = "~/Views/Shared/Layout.cshtml";
+
+    Array drivers = ViewBag.Drivers;
+    string path = ViewBag.Path;
+    List<FolderData> data = ViewBag.Data;
+}
+@section scripts{
+    <script src="~/Scripts/pages/SearchByPath.js"></script>
+}
+<div class="search">
+    <spam>Disks Availables for search:</spam>
+    <form method="post">
+        <select name="path">
+            @foreach (var d in drivers)
+            {
+                <option value="@d">@d</option>
+            }
+        </select>
+        <input type="submit" value="Search" />
+    </form>
+</div>
+<hr />
+<div class="search">
+    <spam>Full path to search in:</spam>
+    <input type="text" id="searchPath"/>
+    <input type="button" id="btn_searchByPath" value="Search"/>
+</div>
+<hr />
+<div class="mainInfo">
+    <div class="info">
+        @path
+        <br />
+        @foreach (var i in data)
+        {
+            for (int j = 0; j < i.Level; ++j)
+            {
+                <span>&nbsp;</span>
+            }
+            <img src="~/fonts/folder.jpg" class="folder"/>
+            @i.Name    
+            <br />
+            foreach (var f in i.Files)
+            {
+                for (int k = 0; k < f.Level; ++k)
+                {
+                    <span>&nbsp;</span>
+                }
+                <img src="~/fonts/file.jpg" class="files"/>
+                @f.Name
+                <br />
+            }
+        }
+    </div>
+    <div class="filesNumber">
+        <table>
+            <thead>
+                <tr>
+                    <th class="head">Less 10Mb</th>
+                    <th class="head">10Mb - 50Mb</th>
+                    <th class="head">More 100Mb</th>
+                </tr>           
+            </thead>
+            <tbody>
+                @Html.Partial("TableFiles")
+            </tbody>
+        </table>
+    </div>
+</div>
+
+

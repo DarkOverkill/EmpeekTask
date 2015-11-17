@@ -1,0 +1,29 @@
+﻿body {
+}
+img.folder{
+    width:20px;
+    height:16px;
+}
+img.files{
+    width:15px;
+    height:15px;
+}
+div.search{
+    width:100%;
+}
+div.info{
+    width:40%;
+    float: left;
+}
+div.filesNumber{
+}
+
+th.head{
+    width: 200px;
+    height: 25px;
+    background-color: #ddd;
+}
+td{
+    width: 200px;
+    text-align:center;
+}

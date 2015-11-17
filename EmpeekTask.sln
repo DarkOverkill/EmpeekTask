@@ -1,0 +1,34 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 14
+VisualStudioVersion = 14.0.23107.0
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EmpeekTask", "EmpeekTask\EmpeekTask.csproj", "{89418A39-D4CB-446C-A60E-FB0271ED499E}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EmpeekTask.Entity", "EmpeekTask.Entity\EmpeekTask.Entity.csproj", "{7043353E-4298-4D51-A838-BE94ADDB6174}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EmpeekTask.Repositories", "EmpeekTask.Repositories\EmpeekTask.Repositories.csproj", "{762069D7-7F26-4349-AA03-1465340534DE}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{89418A39-D4CB-446C-A60E-FB0271ED499E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{89418A39-D4CB-446C-A60E-FB0271ED499E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{89418A39-D4CB-446C-A60E-FB0271ED499E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{89418A39-D4CB-446C-A60E-FB0271ED499E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{7043353E-4298-4D51-A838-BE94ADDB6174}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7043353E-4298-4D51-A838-BE94ADDB6174}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7043353E-4298-4D51-A838-BE94ADDB6174}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7043353E-4298-4D51-A838-BE94ADDB6174}.Release|Any CPU.Build.0 = Release|Any CPU
+		{762069D7-7F26-4349-AA03-1465340534DE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{762069D7-7F26-4349-AA03-1465340534DE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{762069D7-7F26-4349-AA03-1465340534DE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{762069D7-7F26-4349-AA03-1465340534DE}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
